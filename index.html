@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>九九</title>
+  <style>
+    body{
+      display:flex;
+      flex-wrap:wrap;
+      width:420px;
+      background-color:grey;
+    }
+    p{
+      height: 30px;
+      width: 40px;
+      text-align: right;
+      font-weight:bold;
+      background-color:white;
+      margin-right:1px;
+      margin-top:1px;
+      margin-bottom:0px;
+    }
+    .blue{
+      height: 30px;
+      width: 40px;
+      text-align: right;
+      background-color:blue;
+      color:white;
+      font-weight:bold;
+      margin-right:1px;
+      margin-top:1px;
+      margin-bottom:0px;
+    }
+  </style>
+</head>
+
+<script type="text/javascript">
+  'use strict'
+   document.write(`<p>0</p>`)
+    for(var i = 1 ; i <= 99 ; i++){
+      if(i%3==0 || i.toString().match(/3/)){
+        document.write(`<p class="blue">`+i+`</p>`);
+    }else{
+      document.write(`<p>`+i+`</p>`);
+    }
+    }
+</script>
+
+</body>
+</html>
+
